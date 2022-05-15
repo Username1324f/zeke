@@ -1,0 +1,490 @@
+<html>
+    <head>
+        <!--Metadata-->
+        <title>Zekern | Professional Environmental Artist</title>
+
+        <!--Downloads-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=0.72">
+
+        <!--Creative-->
+        <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="./assets/animoji.png">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <style>
+
+            /* main */
+
+            .html {
+                scroll-behavior: smooth;
+            }
+
+            .name {
+                color: #6c9dae;
+            }
+
+            .avatar {
+                padding-top: 150px;
+            }
+
+            .titletext {
+                font-size: 70px;
+                color: #e7e7e7;
+            }
+
+            .subtext {
+                font-size: 30px;
+                color: #e7e7e7;
+            }
+
+            .linkdown {
+                font-size: 20px;
+                color: #6c9dae;
+            }
+
+            .titlesection {
+                background: #1D4350;
+                background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+                background: linear-gradient(to right, #A43931, #1D4350);
+                padding-bottom: 175px;
+            }
+
+            .aboutsection {
+                background: #42275a;
+                background: -webkit-linear-gradient(to right, #734b6d, #42275a);
+                background: linear-gradient(to right, #734b6d, #42275a);
+                padding-bottom: 50px;
+            }
+
+            .skillssection {
+                background: #1D4350;
+                background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+                background: linear-gradient(to right, #A43931, #1D4350);
+                padding-bottom: 50px;
+            }
+
+            .previousworksection {
+                background: #42275a;
+                background: -webkit-linear-gradient(to right, #734b6d, #42275a);
+                background: linear-gradient(to right, #734b6d, #42275a);
+                padding-bottom: 50px;
+            }
+
+            .contactsection {
+                background: #1D4350;
+                background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+                background: linear-gradient(to right, #A43931, #1D4350);
+                padding-bottom: 50px;
+            }
+
+            .sectionseparator {
+                height: 10px;
+            }
+ 
+            .sectionheader {
+                font-size: 40px;
+                color: #e7e7e7;
+            }
+
+            .aboutmeheader {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color: #e7e7e7;
+            }
+
+            .contactmeheader {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color: #e7e7e7;
+            }
+
+            .aboutcontent {
+                font-size: 20px;
+                color: #e7e7e7;
+            }
+
+            .contactcontent {
+                font-size: 20px;
+                color: #e7e7e7;
+            }
+
+            .discord-button {
+                background-color: #7289DA;
+                border-color: #7289DA;
+            }
+
+            .discord-button:hover {
+                background-color: #667dd0;
+                border-color: #667dd0;
+            }
+
+            .animoji {
+                margin-left: 200px;
+                margin-top: -25px;
+            }
+
+            .skillsheader {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color: #e7e7e7;
+            }
+
+            .previousworkheader {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                color: #e7e7e7;
+            }
+
+            .tabcontent {
+                display: none;
+                color: #e7e7e7;
+            }
+
+            .tab-text {
+                color: #e7e7e7;
+            }
+
+            .footer1 {
+                background-color: #eeeeee;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .footericon {
+                color: rgb(218, 11, 11);
+            }
+
+            .tab-anchors:hover {
+                background-color: hsl(217, 71%, 53%)
+            }
+
+            .tabcontent {
+                display: block;
+            }
+
+            .scripting-tab {
+                display: none;
+            }
+
+            /* media queries */
+
+            @media screen and (min-width: 1028px) {
+                .titletext {
+                    margin-left: 280px;
+                    margin-top: -235px;
+                }
+
+                .subtext {
+                    margin-left: 280px;
+                    margin-top: -5px;
+                }
+
+                .linkdown {
+                    margin-left: 280px;
+                }
+
+                .animoji {
+                    margin-left: 30px;
+                }
+            }
+            
+            @media screen and (max-width: 1027px) and (min-width: 771px) {
+                .titlesection {
+                    padding-left: 25px;
+                }
+                
+                .titletext {
+                    margin-top: -235px;
+                    margin-left: 275px;
+                }
+                
+                .subtext {
+                    margin-left: 275px;
+                }
+
+                .linkdown {
+                    margin-left: 275px;
+                }
+
+                .aboutsection {
+                    padding-left: 25px;
+                }
+
+                .animoji {
+                    margin-left: 30px;
+                }
+
+                .skillssection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                .previousworksection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                .contactsection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+
+            @media screen and (max-width: 770px) and (min-width: 0px) {
+                .animoji {
+                    display: none;
+                }
+
+                .avatar {
+                    display: none;
+                }
+
+                .titletext {
+                    padding-top: 200px;
+                }
+
+                .titlesection {
+                    padding-left: 25px;
+                }
+
+                .skillssection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                .previousworksection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                .contactsection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                .aboutsection {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+
+            /* scrollbar */
+
+            ::-webkit-scrollbar {
+            width: 15px;
+            }
+
+            ::-webkit-scrollbar-track {
+            background: #ffffff;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!--main html-->
+
+        <div class="titlesection">
+            <div class="container">
+                <img src="./assets/pfp.png" class="avatar level-item level-right" width="250px">
+                <h1 class="titletext"><b>Hey, I'm <span class="name">Zekern.</span></b></h1>
+                <p class="subtext pb-5">Professional Environmental Artist</p>
+                <a class="linkdown" href="#prevwork"><i class="fas fa-arrow-down"></i> <b>See my work</b></a>
+            </div>
+        </div>
+
+
+        <div class="sectionseparator"></div>
+
+        <div id="about" class="aboutsection">
+            <div class="container">
+                <h1 class="heading aboutmeheader sectionheader"><b>ABOUT ME</b></h1>
+                <div class="columns">
+                    <div class="column">
+                        <p class="aboutcontent">I'm Zekern and I have been an Environmental Artist and a front end Scripter for 2 years now.  My immense knowledge in Blender and Lua just makes my work even more better.<br><br>I have been developing on Roblox since 2019.  Since a young age i have been practicing and enhancing my skills to make sure my clients are satisfied from my work.  I'm always open to new projects and challenges to have a go at.Happy to have a chat if you've got a game where you'd want me to work for.<br><br>I may decline your request depending on my work load and the progress/status of your game.</p>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/aboutme.png" class="animoji" width="600px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionseparator"></div>
+
+        <div class="skillssection">
+            <div class="container">
+                <a id="#skillsbarload"></a>
+                <h1 class="heading skillsheader sectionheader"><b>SKILLS</b></h1>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-4"><b>Environment Designing</b></p>
+                            <progress class="progress is-danger html" value="0" max="100">90%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-4"><b>Building</b></p>
+                            <progress class="progress is-info css" value="0" max="100">85%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div id="skillview" class="card mt-5">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-4"><b>Scuplting</b></p>
+                            <progress class="progress is-warning js" value="0" max="100">45%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-4"><b>3D Modeling</b></p>
+                            <progress class="progress is-success bs" value="0" max="100">92%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-4"><b>Scripting</b></p>
+                            <progress id="python" class="progress is-link python" value="0" max="100">80%</progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--progress bar animate-->
+
+        <script>
+            document.addEventListener("scroll", inView);
+
+            function inView() {
+                if (document.getElementById("skillview").getBoundingClientRect().bottom <= window.innerHeight) {
+                    $('.html').animate({value:'90'}, 1000);
+                    $('.css').animate({value:'85'}, 1000);
+                    $('.js').animate({value:'45'}, 1000);
+                    $('.bs').animate({value:'92'}, 1000);
+                    $('.python').animate({value:'80'}, 1000)
+                }
+            }
+        </script>
+
+        <div class="sectionseparator"></div>
+
+        <div class="previousworksection">
+            <div class="container">
+                <a id="prevwork"></a>
+                <h1 class="heading previousworkheader sectionheader"><b>PREVIOUS WORK</b></h1>
+                <div class="tabs is-toggle-rounded">
+                    <ul>
+                      <li class="tablinks is-active" onclick="openTab(event, 'building')">
+                        <a class="tab-anchors">
+                          <span class="tab-text">Building</span>
+                        </a>
+                      </li>
+                      <li class="tablinks" onclick="openTab(event, 'scripting')">
+                        <a class="tab-anchors">
+                          <span class="tab-text">Scripting & FX</span>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div id="building" class="tabcontent">
+                    <img src="./assets/example1.png" class="image mb-3">
+                    <img src="./assets/example2.png" class="image">
+                </div>
+                <div id="scripting" class="scripting-tab tabcontent">
+                    <iframe src="https://www.youtube.com/embed/3D-ouhLH-rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mb-3 mr-3"></iframe>
+                    <iframe src="https://www.youtube.com/embed/dgJlA1iJWjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mb-3 mr-3"></iframe>
+                    <iframe src="https://www.youtube.com/embed/7_4yHc5Sc8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mb-3 mr-3"></iframe>
+                    <iframe src="https://www.youtube.com/embed/j15_g3AWFh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mb-3 mr-3"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--tab js-->
+
+        <script>
+            function openTab(event, tabId) {
+
+            tabcontent = document.getElementsByClassName('tabcontent');
+            for (i=0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = 'none';
+            }
+
+            tablinks = document.getElementsByClassName('tablinks');
+            for (i=0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(' is-active', '')
+            }
+
+            document.getElementById(tabId).style.display = 'block';
+            event.currentTarget.className += " is-active";
+
+            }
+        </script>
+
+        <div class="sectionseparator"></div>
+
+        <div class="contactsection">
+            <div class="container">
+                <h1 class="heading contactmeheader sectionheader"><b>CONTACT ME</b></h1>
+                <p class="contactcontent">Interested in commissioning me or have any questions?  Get in touch, I'd love to hear from you, I'm always open to have a chat.  Even if it is just an idea in the making, I'd be happy to help you out and make your idea come to life.<br><br>My primary method of contact is via email, I tend to respond faster here.  Simply click the button below and you'll be redirected to your default mail application, where you can directly send me an email.</p>
+                <a href="mailto:benpaterson2704@gmail.com" target="_blank"><button class="button is-info mt-5 is-medium">Send me an email</button></a>
+                <a href="https://discord.com/channels/@me/974608466704482344" target="_blank"><button class="button discord-button mt-5 is-medium has-text-white ml-1">Message me on Discord</button></a>
+            </div>
+        </div>
+
+        <div class="footer1">
+            <div class="container">
+                <p class="is-size-6 has-text-centered">Made with <i class="fas fa-heart footericon"></i> by <b><a href="https://benpaterson.co.uk/" target="_blank">Ben Paterson</a></b></p>
+            </div>
+        </div>
+
+        <!--scroll button-->
+
+        <script>
+            jQuery($ => {
+              const speed = 1000;
+          
+              $('a[href*="#"]')
+                .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+                .unbind('click.smoothScroll')
+                .bind('click.smoothScroll', event => {
+                  const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+                  const targetElement = document.getElementById(targetId);
+          
+                  if (targetElement) {
+                    event.preventDefault();
+                    $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+                  }
+                });
+            });
+          </script>
+
+        <!--other js-->
+
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+
+    </body>
+</html>
